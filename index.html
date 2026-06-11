@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Équipe Chiasson de Francesco | Immobilier de Prestige - Immobiliermaison.com</title>
+    <meta name="description" content="L'Équipe Chiasson de Francesco vous accompagne dans la vente et l'achat de propriétés avec un service haut de gamme et des stratégies sur mesure. Évaluation privée.">
+    <meta name="keywords" content="équipe chiasson de francesco, immobilier haut de gamme, courtier immobilier, immobiliermaison.com, évaluation immobilière prestige">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        remaxRed: '#E11B22',
+                        remaxRedHover: '#B9151B',
+                        luxuryDark: '#0A1128', /* Bleu nuit profond très luxueux */
+                        luxuryLight: '#FDFDFD',
+                        accentGold: '#D4AF37', /* Or subtil pour le prestige */
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.3)',
+                        'floating': '0 20px 40px -10px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Animations fluides */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.15s; }
+        .reveal-delay-2 { transition-delay: 0.3s; }
+        .reveal-delay-3 { transition-delay: 0.45s; }
+
+        /* Formulaire Éditorial Luxe (Dark Mode Glass) */
+        .input-luxury {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 1rem 0;
+            color: #FFFFFF;
+            transition: all 0.4s ease;
+            font-size: 0.95rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        .input-luxury::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .input-luxury:focus {
+            outline: none;
+            border-bottom-color: #E11B22;
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        /* FAQ Accordion Transitions */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+            opacity: 0;
+        }
+        .faq-answer.open {
+            max-height: 500px;
+            opacity: 1;
+        }
+        .faq-icon {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .faq-icon.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-luxuryLight antialiased selection:bg-remaxRed selection:text-white">
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-700 bg-white/80 backdrop-blur-lg border-b border-transparent py-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-col cursor-pointer group">
+                    <span class="font-serif text-2xl lg:text-3xl font-bold text-luxuryDark tracking-wide uppercase transition-colors">
+                        Immobilier<span class="text-remaxRed">maison</span>
+                    </span>
+                    <span class="text-[9px] tracking-[0.25em] text-gray-500 mt-1 uppercase font-semibold">Équipe Chiasson de Francesco</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#expertise" class="text-xs font-semibold uppercase tracking-widest text-gray-500 hover:text-luxuryDark transition duration-300">Excellence</a>
+                    <a href="#temoignages" class="text-xs font-semibold uppercase tracking-widest text-gray-500 hover:text-luxuryDark transition duration-300">Témoignages</a>
+                    <a href="tel:+18001234567" class="group flex items-center gap-3 border border-luxuryDark/20 bg-transparent rounded-none px-6 py-3 hover:bg-luxuryDark hover:text-white transition duration-500">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-luxuryDark group-hover:text-white transition">(800) 123-4567</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-luxuryDark">
+            <div class="absolute inset-0 z-0 scale-105 transform transition-transform duration-[10s] ease-out hover:scale-100">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Résidence de prestige" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-luxuryDark/95 via-luxuryDark/70 to-luxuryDark/20"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full flex flex-col lg:flex-row items-center justify-between mt-10 lg:mt-0">
+                
+                <div class="lg:w-1/2 text-white reveal mb-16 lg:mb-0">
+                    <p class="text-remaxRed font-semibold tracking-[0.3em] uppercase text-xs mb-6 flex items-center gap-4">
+                        <span class="w-8 h-px bg-remaxRed"></span> Service de prestige
+                    </p>
+                    <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.1] mb-8">
+                        Révélez la véritable <br>
+                        <span class="italic text-gray-300 font-light">valeur de votre propriété.</span>
+                    </h1>
+                    <p class="font-light text-lg text-gray-300 mb-10 max-w-lg leading-relaxed">
+                        L'Équipe Chiasson de Francesco déploie une mise en marché digne des plus grandes revues d'architecture. Confiez la vente de votre patrimoine à des mains expertes.
+                    </p>
+                    <a href="#expertise" class="inline-flex items-center text-xs font-semibold uppercase tracking-widest text-white hover:text-remaxRed transition duration-300">
+                        Découvrir notre approche <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="lg:w-5/12 w-full reveal reveal-delay-2">
+                    <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-10 lg:p-12 shadow-glass relative">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-remaxRed"></div>
+                        
+                        <h2 class="font-serif text-3xl text-white mb-2">Évaluation Privée</h2>
+                        <p class="text-sm text-gray-300 mb-8 font-light">Une analyse confidentielle de la valeur de votre bien sur le marché actuel.</p>
+                        
+                        <form id="premiumLeadForm" class="space-y-6">
+                            <div>
+                                <input type="text" id="name" required placeholder="Votre nom complet" class="input-luxury">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <input type="tel" id="phone" required placeholder="Téléphone" class="input-luxury">
+                                </div>
+                                <div>
+                                    <input type="email" id="email" required placeholder="Courriel" class="input-luxury">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" id="address" placeholder="Adresse de la propriété (Optionnel)" class="input-luxury">
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-white hover:bg-remaxRed text-luxuryDark hover:text-white uppercase tracking-widest text-xs font-bold py-5 mt-4 transition-colors duration-500 flex justify-center items-center gap-3 group">
+                                Demander mon évaluation
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                            <div class="flex items-center justify-center mt-6 text-[10px] text-gray-400 tracking-widest uppercase font-semibold">
+                                <svg class="w-3 h-3 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                Discrétion absolue garantie
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="py-32 bg-luxuryLight relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="mb-20 text-center max-w-3xl mx-auto reveal">
+                    <p class="text-remaxRed text-xs font-bold uppercase tracking-widest mb-4">L'Art de l'Immobilier</p>
+                    <h2 class="font-serif text-4xl md:text-5xl text-luxuryDark leading-tight mb-6">Une signature d'excellence.</h2>
+                    <p class="text-gray-500 font-light leading-relaxed text-lg">
+                        Nous ne nous contentons pas d'inscrire votre maison. Nous créons une véritable campagne de marketing autour de votre propriété pour attirer l'acheteur idéal, peu importe où il se trouve.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white p-10 shadow-floating border border-gray-50 reveal reveal-delay-1 group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="w-14 h-14 bg-luxuryLight border border-gray-100 rounded-full flex items-center justify-center mb-8 text-luxuryDark group-hover:text-remaxRed transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-luxuryDark mb-4">Mise en marché Haute Couture</h3>
+                        <p class="text-gray-500 font-light text-sm leading-relaxed">Photographie HDR, vidéographie par drone, home staging virtuel et brochures éditoriales. L'image de votre propriété sera irréprochable.</p>
+                    </div>
+
+                    <div class="bg-white p-10 shadow-floating border border-gray-50 reveal reveal-delay-2 group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="w-14 h-14 bg-luxuryLight border border-gray-100 rounded-full flex items-center justify-center mb-8 text-luxuryDark group-hover:text-remaxRed transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-luxuryDark mb-4">Portée Internationale</h3>
+                        <p class="text-gray-500 font-light text-sm leading-relaxed">Appuyés par le réseau mondial RE/MAX, nous diffusons votre inscription sur les plateformes prestigieuses pour capter les acheteurs étrangers et locaux.</p>
+                    </div>
+
+                    <div class="bg-white p-10 shadow-floating border border-gray-50 reveal reveal-delay-3 group hover:-translate-y-2 transition-transform duration-500">
+                        <div class="w-14 h-14 bg-luxuryLight border border-gray-100 rounded-full flex items-center justify-center mb-8 text-luxuryDark group-hover:text-remaxRed transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-luxuryDark mb-4">Négociation Stratégique</h3>
+                        <p class="text-gray-500 font-light text-sm leading-relaxed">Nous protégeons vos intérêts financiers. De la qualification des acheteurs (preuve de fonds) à l'acte notarié, notre expertise sécurise votre transaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="temoignages" class="py-32 bg-luxuryDark text-white relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-20 reveal">
+                    <h2 class="font-serif text-4xl md:text-5xl mb-6">Des résultats exceptionnels.</h2>
+                    <div class="w-16 h-px bg-remaxRed mx-auto mb-6"></div>
+                    <p class="text-gray-400 font-light text-lg">Ce que nos clients disent de leur expérience avec nous.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="p-10 border border-white/10 bg-white/5 reveal reveal-delay-1 relative">
+                        <div class="text-accentGold text-xl mb-6 tracking-widest">★★★★★</div>
+                        <p class="text-gray-300 font-light text-sm italic mb-8 leading-relaxed">"L'Équipe Chiasson de Francesco a su mettre en valeur l'architecture de notre maison comme personne d'autre. La qualité des photos et de la vidéo a attiré des acheteurs qualifiés en quelques jours. Un service irréprochable."</p>
+                        <div class="pt-6 border-t border-white/10">
+                            <p class="font-serif text-white text-lg">Hélène & Robert C.</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Vendeurs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10 border border-remaxRed/30 bg-white/5 reveal reveal-delay-2 relative overflow-hidden">
+                        <div class="text-accentGold text-xl mb-6 tracking-widest">★★★★★</div>
+                        <p class="text-gray-300 font-light text-sm italic mb-8 leading-relaxed">"La discrétion et le professionnalisme de Francesco sont remarquables. Ils ont un réseau d'acheteurs impressionnant. Notre propriété a été vendue au-dessus du prix demandé, sans tracas."</p>
+                        <div class="pt-6 border-t border-white/10">
+                            <p class="font-serif text-white text-lg">Famille Lavoie</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Vendeurs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10 border border-white/10 bg-white/5 reveal reveal-delay-3 relative">
+                        <div class="text-accentGold text-xl mb-6 tracking-widest">★★★★★</div>
+                        <p class="text-gray-300 font-light text-sm italic mb-8 leading-relaxed">"Des courtiers qui connaissent le marché du luxe. Ils nous ont conseillé sur de petites améliorations payantes avant la mise en marché. Le retour sur investissement a été immédiat."</p>
+                        <div class="pt-6 border-t border-white/10">
+                            <p class="font-serif text-white text-lg">Marc-Antoine P.</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Investisseur & Vendeur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-luxuryLight">
+            <div class="max-w-4xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="font-serif text-4xl text-luxuryDark mb-4">Questions Fréquentes</h2>
+                    <p class="text-gray-500 font-light">Transparence et clarté à chaque étape de votre transaction.</p>
+                </div>
+
+                <div class="space-y-4 reveal reveal-delay-1">
+                    <div class="border-b border-gray-200">
+                        <button class="faq-btn w-full text-left py-6 flex justify-between items-center focus:outline-none group">
+                            <span class="font-serif text-xl text-luxuryDark group-hover:text-remaxRed transition-colors">Comment déterminez-vous la valeur d'une propriété ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-icon group-hover:text-remaxRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-luxuryLight">
+                            <p class="pb-8 text-gray-500 font-light text-sm leading-relaxed pr-8">
+                                Nous réalisons une Analyse Comparative de Marché (ACM) exhaustive. Nous évaluons les propriétés vendues récemment dans votre secteur, celles actuellement sur le marché, mais nous prenons aussi en compte les spécificités uniques, les rénovations haut de gamme et les tendances actuelles pour positionner votre propriété stratégiquement.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-b border-gray-200">
+                        <button class="faq-btn w-full text-left py-6 flex justify-between items-center focus:outline-none group">
+                            <span class="font-serif text-xl text-luxuryDark group-hover:text-remaxRed transition-colors">Offrez-vous des ventes confidentielles ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-icon group-hover:text-remaxRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-luxuryLight">
+                            <p class="pb-8 text-gray-500 font-light text-sm leading-relaxed pr-8">
+                                Absolument. Certains de nos clients préfèrent la discrétion. Grâce à notre réseau exclusif d'acheteurs qualifiés et à nos relations avec d'autres courtiers immobiliers, nous pouvons orchestrer une vente "hors marché" sans affichage public ni pancarte sur votre terrain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-200">
+                        <button class="faq-btn w-full text-left py-6 flex justify-between items-center focus:outline-none group">
+                            <span class="font-serif text-xl text-luxuryDark group-hover:text-remaxRed transition-colors">Pourquoi choisir l'Équipe Chiasson de Francesco ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-icon group-hover:text-remaxRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-luxuryLight">
+                            <p class="pb-8 text-gray-500 font-light text-sm leading-relaxed pr-8">
+                                L'alliance parfaite entre un service personnalisé "boutique" et la puissance mondiale de RE/MAX. Nous offrons une qualité visuelle irréprochable, une disponibilité 7 jours sur 7, et nous gérons chaque détail de la transaction, de la mise en valeur de la maison jusqu'au rendez-vous chez le notaire.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-luxuryDark text-white pt-24 pb-12 border-t-4 border-remaxRed">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
+            <div class="lg:col-span-2">
+                <span class="font-serif text-3xl font-bold tracking-wide uppercase">Immobilier<span class="text-remaxRed">maison</span></span>
+                <p class="mt-6 text-gray-400 font-light max-w-sm leading-relaxed text-sm">
+                    L'Équipe Chiasson de Francesco redéfinit l'expérience immobilière. Une approche où l'élégance rencontre la performance pour la vente et l'achat de vos propriétés.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif text-lg mb-6 tracking-widest text-white">Contact</h4>
+                <ul class="space-y-4 text-gray-400 font-light text-sm">
+                    <li><a href="tel:+18001234567" class="hover:text-white hover:pl-2 transition-all duration-300">T: (800) 123-4567</a></li>
+                    <li><a href="mailto:info@immobiliermaison.com" class="hover:text-white hover:pl-2 transition-all duration-300">E: info@immobiliermaison.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-lg mb-6 tracking-widest text-white">Affiliation</h4>
+                <div class="border border-white/20 p-4 inline-block text-center bg-white/5">
+                    <p class="font-bold text-white tracking-widest text-lg">RE/MAX</p>
+                    <p class="text-[9px] text-gray-400 uppercase tracking-widest mt-1">Courtiers Immobiliers</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-semibold">
+            <p>&copy; 2026 Immobiliermaison.com - Équipe Chiasson.</p>
+            <div class="space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-gray-300 transition-colors">Confidentialité</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Header Scroll Effect (Glassmorphism -> Solid)
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md', 'border-gray-200');
+                header.classList.remove('border-transparent', 'py-5');
+                header.classList.add('py-3');
+            } else {
+                header.classList.remove('shadow-md', 'border-gray-200', 'py-3');
+                header.classList.add('border-transparent', 'py-5');
+            }
+        });
+
+        // 2. Intersection Observer Animations (Reveal on scroll)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // 3. FAQ Accordion Logic
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                
+                // Fermer les autres (Accordion style)
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    if(a !== answer) a.classList.remove('open');
+                });
+                document.querySelectorAll('.faq-icon').forEach(i => {
+                    if(i !== icon) i.classList.remove('rotate');
+                });
+
+                // Toggle l'actuel
+                answer.classList.toggle('open');
+                icon.classList.toggle('rotate');
+            });
+        });
+
+        // 4. Form Submission Simulation (Premium feedback)
+        document.getElementById('premiumLeadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = this.querySelector('button[type="submit"]');
+            const originalHTML = btn.innerHTML;
+            
+            // État de chargement élégant
+            btn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-4 w-4 text-luxuryDark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Traitement sécurisé...
+            `;
+            btn.disabled = true;
+            btn.classList.add('opacity-90', 'cursor-not-allowed');
+
+            setTimeout(() => {
+                alert("Votre demande d'évaluation a été transmise avec succès à l'Équipe Chiasson de Francesco. Nous communiquerons avec vous en toute discrétion sous peu.");
+                this.reset();
+                btn.innerHTML = originalHTML;
+                btn.disabled = false;
+                btn.classList.remove('opacity-90', 'cursor-not-allowed');
+            }, 1800);
+        });
+    </script>
+</body>
+</html>
