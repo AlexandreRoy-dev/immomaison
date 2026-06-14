@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Brome-Missisquoi",
+    "slug": "brome-missisquoi",
+    "chef_lieu": "Cowansville",
+    "municipalities": [
+      {"name": "Abercorn", "type": "village"},
+      {"name": "Bedford", "type": "ville", "slug": "bedford"},
+      {"name": "Bedford", "type": "canton", "slug": "bedford-canton"},
+      {"name": "Bolton-Ouest", "type": "municipalite"},
+      {"name": "Brigham", "type": "municipalite"},
+      {"name": "Brome", "type": "village"},
+      {"name": "Bromont", "type": "ville"},
+      {"name": "Cowansville", "type": "ville"},
+      {"name": "Dunham", "type": "ville"},
+      {"name": "East Farnham", "type": "municipalite"},
+      {"name": "Farnham", "type": "ville"},
+      {"name": "Frelighsburg", "type": "municipalite"},
+      {"name": "Lac-Brome", "type": "ville"},
+      {"name": "Notre-Dame-de-Stanbridge", "type": "municipalite"},
+      {"name": "Pike River", "type": "municipalite"},
+      {"name": "Saint-Armand", "type": "municipalite"},
+      {"name": "Saint-Ignace-de-Stanbridge", "type": "municipalite"},
+      {"name": "Sainte-Sabine", "type": "municipalite"},
+      {"name": "Stanbridge East", "type": "municipalite"},
+      {"name": "Stanbridge Station", "type": "municipalite"},
+      {"name": "Sutton", "type": "ville"}
+    ]
+  },
+  {
+    "name": "Coaticook",
+    "slug": "coaticook",
+    "chef_lieu": "Coaticook",
+    "municipalities": [
+      {"name": "Barnston-Ouest", "type": "municipalite"},
+      {"name": "Coaticook", "type": "ville"},
+      {"name": "Compton", "type": "municipalite"},
+      {"name": "Dixville", "type": "municipalite"},
+      {"name": "East Hereford", "type": "municipalite"},
+      {"name": "Martinville", "type": "municipalite"},
+      {"name": "Saint-Herménégilde", "type": "municipalite"},
+      {"name": "Saint-Malo", "type": "municipalite"},
+      {"name": "Saint-Venant-de-Paquette", "type": "municipalite"},
+      {"name": "Sainte-Edwidge-de-Clifton", "type": "canton"},
+      {"name": "Stanstead-Est", "type": "municipalite"},
+      {"name": "Waterville", "type": "ville"}
+    ]
+  },
+  {
+    "name": "La Haute-Yamaska",
+    "slug": "haute-yamaska",
+    "chef_lieu": "Granby",
+    "municipalities": [
+      {"name": "Granby", "type": "ville"},
+      {"name": "Roxton Pond", "type": "municipalite"},
+      {"name": "Saint-Alphonse-de-Granby", "type": "municipalite"},
+      {"name": "Saint-Joachim-de-Shefford", "type": "municipalite"},
+      {"name": "Sainte-Cécile-de-Milton", "type": "municipalite"},
+      {"name": "Shefford", "type": "canton"},
+      {"name": "Warden", "type": "village"},
+      {"name": "Waterloo", "type": "ville"}
+    ]
+  },
+  {
+    "name": "Le Granit",
+    "slug": "granit",
+    "chef_lieu": "Lac-Mégantic",
+    "municipalities": [
+      {"name": "Audet", "type": "municipalite"},
+      {"name": "Frontenac", "type": "municipalite"},
+      {"name": "Lac-Drolet", "type": "municipalite"},
+      {"name": "Lac-Mégantic", "type": "ville"},
+      {"name": "Lambton", "type": "municipalite"},
+      {"name": "Marston", "type": "canton"},
+      {"name": "Milan", "type": "municipalite"},
+      {"name": "Nantes", "type": "municipalite"},
+      {"name": "Notre-Dame-des-Bois", "type": "municipalite"},
+      {"name": "Piopolis", "type": "municipalite"},
+      {"name": "Saint-Augustin-de-Woburn", "type": "paroisse"},
+      {"name": "Saint-Ludger", "type": "municipalite"},
+      {"name": "Saint-Robert-Bellarmin", "type": "municipalite"},
+      {"name": "Saint-Romain", "type": "municipalite"},
+      {"name": "Saint-Sébastien", "type": "municipalite"},
+      {"name": "Sainte-Cécile-de-Whitton", "type": "municipalite"},
+      {"name": "Stornoway", "type": "municipalite"},
+      {"name": "Stratford", "type": "canton"},
+      {"name": "Val-Racine", "type": "municipalite"}
+    ]
+  },
+  {
+    "name": "Le Haut-Saint-François",
+    "slug": "haut-saint-francois",
+    "chef_lieu": "Cookshire-Eaton",
+    "municipalities": [
+      {"name": "Ascot Corner", "type": "municipalite"},
+      {"name": "Bury", "type": "municipalite"},
+      {"name": "Chartierville", "type": "municipalite"},
+      {"name": "Cookshire-Eaton", "type": "ville"},
+      {"name": "Dudswell", "type": "municipalite"},
+      {"name": "East Angus", "type": "ville"},
+      {"name": "Hampden", "type": "canton"},
+      {"name": "La Patrie", "type": "municipalite"},
+      {"name": "Lingwick", "type": "canton"},
+      {"name": "Newport", "type": "municipalite"},
+      {"name": "Saint-Isidore-de-Clifton", "type": "municipalite"},
+      {"name": "Scotstown", "type": "ville"},
+      {"name": "Weedon", "type": "municipalite"},
+      {"name": "Westbury", "type": "canton"}
+    ]
+  },
+  {
+    "name": "Le Val-Saint-François",
+    "slug": "val-saint-francois",
+    "chef_lieu": "Richmond",
+    "municipalities": [
+      {"name": "Bonsecours", "type": "municipalite"},
+      {"name": "Cleveland", "type": "canton"},
+      {"name": "Kingsbury", "type": "village"},
+      {"name": "Lawrenceville", "type": "village"},
+      {"name": "Maricourt", "type": "municipalite"},
+      {"name": "Melbourne", "type": "canton"},
+      {"name": "Racine", "type": "municipalite"},
+      {"name": "Richmond", "type": "ville"},
+      {"name": "Saint-Claude", "type": "municipalite"},
+      {"name": "Saint-Denis-de-Brompton", "type": "municipalite"},
+      {"name": "Saint-François-Xavier-de-Brompton", "type": "municipalite"},
+      {"name": "Sainte-Anne-de-la-Rochelle", "type": "municipalite"},
+      {"name": "Stoke", "type": "municipalite"},
+      {"name": "Ulverton", "type": "municipalite"},
+      {"name": "Val-Joli", "type": "municipalite"},
+      {"name": "Valcourt", "type": "canton", "slug": "valcourt-canton"},
+      {"name": "Valcourt", "type": "ville", "slug": "valcourt"},
+      {"name": "Windsor", "type": "ville"}
+    ]
+  },
+  {
+    "name": "Les Sources",
+    "slug": "sources",
+    "chef_lieu": "Val-des-Sources",
+    "municipalities": [
+      {"name": "Danville", "type": "ville"},
+      {"name": "Ham-Sud", "type": "municipalite"},
+      {"name": "Saint-Adrien", "type": "municipalite"},
+      {"name": "Saint-Camille", "type": "canton"},
+      {"name": "Saint-Georges-de-Windsor", "type": "municipalite"},
+      {"name": "Val-des-Sources", "type": "ville"},
+      {"name": "Wotton", "type": "municipalite"}
+    ]
+  },
+  {
+    "name": "Memphrémagog",
+    "slug": "memphremagog",
+    "chef_lieu": "Magog",
+    "municipalities": [
+      {"name": "Austin", "type": "municipalite"},
+      {"name": "Ayer's Cliff", "type": "village"},
+      {"name": "Bolton-Est", "type": "municipalite"},
+      {"name": "Eastman", "type": "municipalite"},
+      {"name": "Hatley", "type": "municipalite", "slug": "hatley"},
+      {"name": "Hatley", "type": "canton", "slug": "hatley-canton"},
+      {"name": "Magog", "type": "ville"},
+      {"name": "North Hatley", "type": "village"},
+      {"name": "Ogden", "type": "municipalite"},
+      {"name": "Orford", "type": "canton"},
+      {"name": "Potton", "type": "canton"},
+      {"name": "Saint-Benoît-du-Lac", "type": "municipalite"},
+      {"name": "Saint-Étienne-de-Bolton", "type": "municipalite"},
+      {"name": "Sainte-Catherine-de-Hatley", "type": "municipalite"},
+      {"name": "Stanstead", "type": "canton", "slug": "stanstead-canton"},
+      {"name": "Stanstead", "type": "ville", "slug": "stanstead"},
+      {"name": "Stukely-Sud", "type": "village"}
+    ]
+  },
+  {
+    "name": "Sherbrooke",
+    "slug": "sherbrooke",
+    "chef_lieu": "Sherbrooke",
+    "municipalities": [
+      {"name": "Sherbrooke", "type": "ville"}
+    ],
+    "boroughs": [
+      {"name": "Brompton–Rock Forest–Saint-Élie–Deauville", "type": "arrondissement", "slug": "brompton-rock-forest-saint-elie-deauville"},
+      {"name": "Fleurimont", "type": "arrondissement", "slug": "fleurimont"},
+      {"name": "Lennoxville", "type": "arrondissement", "slug": "lennoxville"},
+      {"name": "Des Nations", "type": "arrondissement", "slug": "des-nations"}
+    ]
+  }
+]
